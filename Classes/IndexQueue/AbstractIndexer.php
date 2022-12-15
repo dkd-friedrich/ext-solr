@@ -187,7 +187,7 @@ abstract class AbstractIndexer
                 $fieldValue = unserialize($fieldValue);
             }
         } else {
-            $fieldValue = $data[$indexingConfiguration[$solrFieldName]];
+            $fieldValue = $data[$indexingConfiguration[$solrFieldName]] ?? null;
         }
 
         // detect and correct type for dynamic fields
