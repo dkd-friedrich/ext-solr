@@ -7,6 +7,12 @@
 ,123,1,"Main category","This is the main category",0,0
 ,124,1,"Second category","This is the second category",0,123
 ,125,1,"Third category","This is the third category",0,123
+"tt_content",
+,"uid","pid","CType","header",,"bodytext","categories"
+,"10","1","text","text element with category","","1"
+"sys_category_record_mm",
+,"uid_local","uid_foreign","tablenames","fieldname","sorting","sorting_foreign"
+,"125","10","tt_content","categories","0","1"
 "tx_fakeextension_domain_model_foo",
 ,"uid","pid","title","main_category","mm_assignments"
 ,1,1,"First foo record",123,1

@@ -217,6 +217,13 @@ class RelationTest extends IntegrationTestBase
             12,
             ['localField' => 'mm_assignments'],
         ];
+
+        yield 'Can resolve description of parent category of a category attached to tt_content' => [
+            'This is the main category',
+            'tt_content',
+            10,
+            ['localField' => 'categories', 'foreignLabelField' => 'parent.description'],
+        ];
     }
 
     /**
